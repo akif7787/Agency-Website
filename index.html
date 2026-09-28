@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Next-Gen Digital & Cyber Agency delivering UI/UX, Full-Stack Web Development, Cyber Security, Networking, Digital Marketing, Social Media, and Graphics.">
+  <title>VORTEX | Full-Stack Digital, Design & Cyber Agency</title>
+
+  <!-- Google Fonts: Outfit (Sans) & Playfair Display (Editorial Serif) - Designmonks signature typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphic Header -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="#" class="logo">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="logo-text">VORTEX<span>.</span></div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#case-studies" class="nav-link">Work</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-pill-primary">
+          <span>Book a Call</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <button class="mobile-toggle" aria-label="Open mobile navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (Designmonks Layout with Purple Desert Video Background) -->
+    <section id="hero" class="hero">
+      <div class="hero-video-wrapper">
+        <video 
+          id="hero-video" 
+          class="hero-video" 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          preload="auto"
+          poster="assets/videos/purple-desert.jpg"
+        >
+          <source src="assets/videos/purple-desert.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span>Full-Stack Digital, Security & Creative Agency</span>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            We Build, Secure & Scale Products That Drive <br>
+            <span class="gradient-text serif-italic">High-Yield Results</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            From intuitive UI/UX and high-performance Web Development to Cyber Security, Enterprise Networking, and Data-Driven Marketing — we empower modern brands with 360° digital capabilities.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn-pill-primary" style="padding: 0.9rem 2.2rem; font-size: 0.95rem;">
+              <span>Schedule Strategy Call</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#services" class="btn-pill-secondary" style="padding: 0.9rem 2.2rem; font-size: 0.95rem;">
+              <span>Explore Phase 1 Services</span>
+            </a>
+          </div>
+
+          <div class="hero-guarantee">
+            <div class="guarantee-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>15-Min Free Discovery Call</span>
+            </div>
+            <div class="guarantee-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Tailored Quote on Call</span>
+            </div>
+            <div class="guarantee-item">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Multi-Disciplinary Specialists</span>
+            </div>
+          </div>
+
+          <!-- Video Audio & Playback Controls -->
+          <div class="video-control-pill">
+            <button id="toggle-sound" class="control-action" title="Toggle Sound">
+              <span id="sound-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+              </span>
+              <span id="sound-text">Sound Off</span>
+            </button>
+            <div class="control-sep"></div>
+            <button id="toggle-play" class="control-action" title="Pause/Play Video">
+              <span id="play-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+              </span>
+              <span id="play-text">Pause</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Floating Mockup Gallery Showcase -->
+        <div class="hero-showcase">
+          <div class="showcase-card">
+            <img src="assets/videos/purple-desert.jpg" alt="Visual Branding">
+          </div>
+          <div class="showcase-card">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg, #180d2d, #421a78);display:flex;align-items:center;justify-content:center;padding:1.5rem;">
+              <span style="font-weight:800;color:#c77dff;font-size:1.05rem;text-align:center;">UI/UX Web & Apps</span>
+            </div>
+          </div>
+          <div class="showcase-card">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg, #09231b, #124d35);display:flex;align-items:center;justify-content:center;padding:1.5rem;">
+              <span style="font-weight:800;color:#6ee7b7;font-size:1.05rem;text-align:center;">Cyber & PenTest</span>
+            </div>
+          </div>
+          <div class="showcase-card">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg, #30170a, #6c2710);display:flex;align-items:center;justify-content:center;padding:1.5rem;">
+              <span style="font-weight:800;color:#fdba74;font-size:1.05rem;text-align:center;">Full-Stack Dev</span>
+            </div>
+          </div>
+          <div class="showcase-card">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg, #141738, #262c6d);display:flex;align-items:center;justify-content:center;padding:1.5rem;">
+              <span style="font-weight:800;color:#a5b4fc;font-size:1.05rem;text-align:center;">Cloud & Networks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack & Client Logos Marquee -->
+    <section class="ticker-section">
+      <div class="ticker-label">Powered by industry-standard tools, secure infrastructure & modern frameworks</div>
+      <div class="ticker-track">
+        <div class="ticker-item">FIGMA</div>
+        <div class="ticker-item">NEXT.JS</div>
+        <div class="ticker-item">KALI LINUX</div>
+        <div class="ticker-item">CISCO SYSTEMS</div>
+        <div class="ticker-item">WIRESHARK</div>
+        <div class="ticker-item">META ADS</div>
+        <div class="ticker-item">GOOGLE ANALYTICS</div>
+        <div class="ticker-item">ADOBE CC</div>
+        <div class="ticker-item">CLOUDFLARE</div>
+        <!-- Infinite Duplication -->
+        <div class="ticker-item">FIGMA</div>
+        <div class="ticker-item">NEXT.JS</div>
+        <div class="ticker-item">KALI LINUX</div>
+        <div class="ticker-item">CISCO SYSTEMS</div>
+        <div class="ticker-item">WIRESHARK</div>
+        <div class="ticker-item">META ADS</div>
+        <div class="ticker-item">GOOGLE ANALYTICS</div>
+        <div class="ticker-item">ADOBE CC</div>
+        <div class="ticker-item">CLOUDFLARE</div>
+      </div>
+    </section>
+
+    <!-- 1st Phase Services Section (The 7 Core Services) -->
+    <section id="services" class="section-services">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Phase 1 Offerings</span>
+          <h2 class="section-title">Our 7 Core Specialized Capabilities</h2>
+          <p class="section-desc">A complete powerhouse of design, engineering, infrastructure security, and viral brand growth under one roof.</p>
+        </div>
+
+        <div class="services-grid-7">
+          <!-- 1. UI/UX Design -->
+          <div class="service-box">
+            <div class="service-box-header">
+              <div class="service-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <span class="service-num">01 / DESIGN</span>
+              <h3 class="service-name">UI/UX Design</h3>
+              <p class="service-detail">Intuitive mobile apps, web dashboards, responsive prototypes, and comprehensive token-based Figma design systems that maximize retention.</p>
+            </div>
+            <div>
+              <div class="service-pills">
+                <span class="service-pill">User Research</span>
+                <span class="service-pill">Wireframing</span>
+                <span class="service-pill">Figma Systems</span>
+                <span class="service-pill">Mobile & Web UX</span>
+              </div>
+              <div class="service-footer">
+                <span class="service-price-tag">Starting from $499 or Call</span>
+                <a href="#contact" class="service-btn-link">Book on Call &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Web Development -->
+          <div class="service-box">
+            <div class="service-box-header">
+              <div class="service-icon-wrap mint">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <span class="service-num">02 / ENGINEERING</span>
+              <h3 class="service-name">Web Development</h3>
+              <p class="service-detail">Modern, lightning-fast full-stack web applications, e-commerce stores, custom CMS architectures, and headless frontend development.</p>
+            </div>
+            <div>
+              <div class="service-pills">
+                <span class="service-pill">Next.js / React</span>
+                <span class="service-pill">Node / Python</span>
+                <span class="service-pill">E-Commerce</span>
+                <span class="service-pill">API Integration</span>
+              </div>
+              <div class="service-footer">
+                <span class="service-price-tag">Starting from $899 or Call</span>
+                <a href="#contact" class="service-btn-link">Book on Call &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Digital Marketing -->
+          <div class="service-box">
+            <div class="service-box-header">
+              <div class="service-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg>
+              </div>
+              <span class="service-num">03 / GROWTH</span>
+              <h3 class="service-name">Digital Marketing</h3>
+              <p class="service-detail">ROI-obsessed performance marketing, Search Engine Optimization (SEO), high-converting Google & Meta PPC ads, and sales funnel automation.</p>
+            </div>
+            <div>
+              <div class="service-pills">
+                <span class="service-pill">Technical SEO</span>
+                <span class="service-pill">Google & Meta Ads</span>
+                <span class="service-pill">Funnel Optimization</span>
+                <span class="service-pill">CRO Strategy</span>
+              </div>
+              <div class="service-footer">
+                <span class="service-price-tag">Starting from $599/mo or Call</span>
+                <a href="#contact" class="service-btn-link">Book on Call &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Cyber Security -->
+          <div class="service-box">
+            <div class="service-box-header">
+              <div class="service-icon-wrap mint">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <span class="service-num">04 / DEFENSE</span>
+              <h3 class="service-name">Cyber Security</h3>
+              <p class="service-detail">Thorough penetration testing, vulnerability assessments, web application firewall setup, code security audits, and zero-day threat mitigation.</p>
+            </div>
+            <div>
+              <div class="service-pills">
+                <span class="service-pill">Penetration Testing</span>
+                <span class="service-pill">Vulnerability Audit</span>
+                <span class="service-pill">WAF Protection</span>
+                <span class="service-pill">Compliance & NDA</span>
+              </div>
+              <div class="service-footer">
+                <span class="service-price-tag">Audit Starts at $799 or Call</span>
+                <a href="#contact" class="service-btn-link">Book on Call &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Networking Solutions -->
+          <div class="service-box">
+            <div class="service-box-header">
+              <div class="service-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="16" y="2" width="6" height="6" rx="1"/><rect x="9" y="16" width="6" height="6" rx="1"/><path d="M5 8v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><line x1="12" y1="13" x2="12" y2="16"/></svg>
+              </div>
+              <span class="service-num">05 / INFRASTRUCTURE</span>
+              <h3 class="service-name">Networking</h3>
+              <p class="service-detail">Enterprise network architecture, secure VPN tunneling, router/switch configurations, load balancing, cloud network setup, and 24/7 monitoring.</p>
+            </div>
+            <div>
+              <div class="service-pills">
+                <span class="service-pill">Network Design</span>
+                <span class="service-pill">VPN & Firewalls</span>
+                <span class="service-pill">Cloud Infrastructure</span>
+                <span class="service-pill">System Admin</span>
+              </div>
+              <div class="service-footer">
+                <span class="service-price-tag">Tailored Quote on Call</span>
+                <a href="#contact" class="service-btn-link">Book on Call &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Social Media Management -->
+          <div class="service-box">
+            <div class="service-box-header">
+              <div class="service-icon-wrap mint">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </div>
+              <span class="service-num">06 / ENGAGEMENT</span>
+              <h3 class="service-name">Social Media Management</h3>
+              <p class="service-detail">End-to-end content calendar creation, viral short-form reels/TikToks, community management, influencer outreach, and audience growth hacks.</p>
+            </div>
+            <div>
+              <div class="service-pills">
+                <span class="service-pill">Content Strategy</span>
+                <span class="service-pill">Shorts & Reels</span>
+                <span class="service-pill">Community Growth</span>
+                <span class="service-pill">Analytics Reporting</span>
+              </div>
+              <div class="service-footer">
+                <span class="service-price-tag">Starting from $399/mo or Call</span>
+                <a href="#contact" class="service-btn-link">Book on Call &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Graphics Design (Wide Bento Style) -->
+          <div class="service-box" style="grid-column: 1 / -1; display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem;">
+            <div class="service-box-header" style="margin-bottom:0;">
+              <div class="service-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"/></svg>
+              </div>
+              <span class="service-num">07 / BRANDING & VISUALS</span>
+              <h3 class="service-name">Graphics Design & Brand Identity</h3>
+              <p class="service-detail">Iconic logo design, 3D visual assets, brand styleguides, high-impact marketing posters, advertising collaterals, and print-ready merchandise packaging.</p>
+              <div class="service-pills">
+                <span class="service-pill">Brand Identity & Logos</span>
+                <span class="service-pill">Marketing Collateral</span>
+                <span class="service-pill">3D & Vector Assets</span>
+                <span class="service-pill">Print & Packaging</span>
+                <span class="service-pill">Brand Guidelines</span>
+              </div>
+            </div>
+            <div style="display:flex; flex-direction:column; justify-content:center; background:rgba(255,255,255,0.03); border:1px solid var(--glass-border); padding:2rem; border-radius:var(--radius-md);">
+              <h4 style="color:#fff; font-size:1.15rem; margin-bottom:0.5rem;">Need an all-in-one brand package?</h4>
+              <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:1.5rem;">We combine graphics with web development and marketing for an unbeatable initial launch bundle.</p>
+              <div style="display:flex; align-items:center; justify-content:space-between;">
+                <span class="service-price-tag" style="font-size:1rem;">Bundle: Starting from $650 or Discuss on Call</span>
+                <a href="#contact" class="btn-pill-primary" style="padding:0.6rem 1.4rem; font-size:0.85rem;">Let's Talk &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing & Flexible Call Packages -->
+    <section id="pricing" class="section-pricing">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Flexible Investment</span>
+          <h2 class="section-title">Transparent Estimates, <span class="serif-italic">Finalized on Call</span></h2>
+          <p class="section-desc">No rigid one-size-fits-all traps. Every project is unique — we estimate ballpark costs and finalize the exact scope over a friendly 15-minute discovery call.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Tier 1 -->
+          <div class="pricing-card">
+            <div>
+              <span class="pricing-tier">Starter Sprint</span>
+              <div class="pricing-amount">$499 – $999 <span>/ estimated</span></div>
+              <p class="pricing-desc">Perfect for early founders needing quick brand identity, UI/UX audit, or dedicated social media management.</p>
+              <div class="pricing-features">
+                <div class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Brand Logo & Visual Identity Suite</span>
+                </div>
+                <div class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>1-Month Social Media Management</span>
+                </div>
+                <div class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Rapid 1 to 2 Week Turnaround</span>
+                </div>
+                <div class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Direct WhatsApp / Slack Chat</span>
+                </div>
+              </div>
+            </div>
+            <a href="#contact" class="btn-pill-secondary" style="width:100%; justify-content:center;">Book a Call &rarr;</a>
+          </div>
+
+          <!-- Tier 2 (Featured) -->
+          <div class="pricing-card featured">
+            <span class="featured-badge">Most Popular</span>
+            <div>
+              <span class="pricing-tier">Full Digital Build</span>
+              <div class="pricing-amount">$1,299 – $2,499 <span>/ estimated</span></div>
+              <p class="pricing-desc">Complete end-to-end UI/UX design, full-stack website development, and initial digital marketing setup.</p>
+              <div class="pricing-features">
+                <div class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Custom UI/UX & Responsive Web App</span>
+                </div>
+                <div class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Next.js / CMS Architecture with SEO</span>
+                </div>
+                <div class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Basic Cyber Security Vulnerability Check</span>
+                </div>
+                <div class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Unlimited Design Iterations</span>
+                </div>
+              </div>
+            </div>
+            <a href="#contact" class="btn-pill-primary" style="width:100%; justify-content:center;">Confirm Scope on Call &rarr;</a>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="pricing-card">
+            <div>
+              <span class="pricing-tier">Enterprise & Security</span>
+              <div class="pricing-amount">Custom Quote <span>/ on call</span></div>
+              <p class="pricing-desc">For growing companies requiring comprehensive Cyber Security penetration testing, Networking, and large-scale digital growth.</p>
+              <div class="pricing-features">
+                <div class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Deep Penetration Testing & PenTest Report</span>
+                </div>
+                <div class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Enterprise Networking, VPN & Cloud Setup</span>
+                </div>
+                <div class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Multi-Channel Paid Ads & Growth Hacking</span>
+                </div>
+                <div class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Dedicated Team of Friends & Specialists</span>
+                </div>
+              </div>
+            </div>
+            <a href="#contact" class="btn-pill-secondary" style="width:100%; justify-content:center;">Discuss on Call &rarr;</a>
+          </div>
+        </div>
+
+        <p class="pricing-note">
+          📞 <strong>Want custom pricing for specific services?</strong> We will provide an exact breakdown tailored to your budget during our introductory strategy session.
+        </p>
+      </div>
+    </section>
+
+    <!-- Case Studies (Pastel Cards inspired by Designmonks) -->
+    <section id="case-studies" class="section-case-studies">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Proof of Work</span>
+          <h2 class="section-title">Case Studies & <span class="serif-italic">Proven Results</span></h2>
+          <p class="section-desc">Real-world applications of our UI/UX, Web Development, Cyber Security audits, and Marketing campaigns.</p>
+        </div>
+
+        <div class="case-studies-list">
+          <!-- Case 1: Cyber Security & Web -->
+          <article class="case-card theme-mint">
+            <div class="case-content">
+              <span class="case-category">Cyber Security & Web App</span>
+              <h3 class="case-title">VaultShield — Zero-Vulnerability Security Audit & Platform Overhaul</h3>
+              <p class="case-summary">
+                Conducted deep black-box penetration testing, patched 14 critical SQLi/XSS vulnerabilities, and redesigned their customer trust dashboard with clean UI/UX.
+              </p>
+              <div class="case-metrics-bar">
+                <div>
+                  <div class="metric-val">100%</div>
+                  <div class="metric-title">Vulnerabilities Patched</div>
+                </div>
+                <div>
+                  <div class="metric-val">0</div>
+                  <div class="metric-title">Data Breaches</div>
+                </div>
+                <div>
+                  <div class="metric-val">3 Weeks</div>
+                  <div class="metric-title">Audit Duration</div>
+                </div>
+              </div>
+              <div class="case-founder-quote">
+                <div class="founder-img" style="background:#059669;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">VS</div>
+                <div class="founder-info">
+                  <h4>Marcus Sterling</h4>
+                  <p>CTO @ VaultShield</p>
+                </div>
+              </div>
+            </div>
+            <div class="case-visual">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg, #10b981 0%, #047857 100%);display:flex;align-items:center;justify-content:center;color:#fff;padding:2rem;">
+                <div style="text-align:center;">
+                  <span style="font-size:3rem;">🛡️</span>
+                  <h4 style="font-size:1.8rem;margin-top:0.5rem;font-weight:800;">VaultShield Security Suite</h4>
+                  <p style="opacity:0.85;font-size:0.9rem;">Penetration Testing & Hardened Architecture</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 2: UI/UX & Web Dev -->
+          <article class="case-card theme-blue">
+            <div class="case-content">
+              <span class="case-category">UI/UX & Web Development</span>
+              <h3 class="case-title">PlentyPay — Transforming Modern Finance with Intuitive UX</h3>
+              <p class="case-summary">
+                Engineered a high-speed Next.js web application coupled with a clean mobile design system that helped secure Series A funding.
+              </p>
+              <div class="case-metrics-bar">
+                <div>
+                  <div class="metric-val">+310%</div>
+                  <div class="metric-title">User Onboarding</div>
+                </div>
+                <div>
+                  <div class="metric-val">0.6s</div>
+                  <div class="metric-title">Page Load Speed</div>
+                </div>
+                <div>
+                  <div class="metric-val">6 Weeks</div>
+                  <div class="metric-title">Launch Sprint</div>
+                </div>
+              </div>
+              <div class="case-founder-quote">
+                <div class="founder-img" style="background:#0284c7;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">KA</div>
+                <div class="founder-info">
+                  <h4>Kunle Adetayo</h4>
+                  <p>Founder & CEO @ PlentyPay</p>
+                </div>
+              </div>
+            </div>
+            <div class="case-visual">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg, #0284c7 0%, #0369a1 100%);display:flex;align-items:center;justify-content:center;color:#fff;padding:2rem;">
+                <div style="text-align:center;">
+                  <span style="font-size:3rem;">📱</span>
+                  <h4 style="font-size:1.8rem;margin-top:0.5rem;font-weight:800;">PlentyPay Neobank Platform</h4>
+                  <p style="opacity:0.85;font-size:0.9rem;">Full-Stack Next.js & Figma UI/UX</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 3: Digital Marketing & Social Media -->
+          <article class="case-card theme-amber">
+            <div class="case-content">
+              <span class="case-category">Marketing & Social Growth</span>
+              <h3 class="case-title">Apex Apparel — Scaling DTC Sales Through Viral Social Strategy</h3>
+              <p class="case-summary">
+                Executed targeted Meta ads, automated email funnels, and viral short-form video content that generated over $420k in seasonal revenue.
+              </p>
+              <div class="case-metrics-bar">
+                <div>
+                  <div class="metric-val">5.8x</div>
+                  <div class="metric-title">ROAS on Ad Spend</div>
+                </div>
+                <div>
+                  <div class="metric-val">120K+</div>
+                  <div class="metric-title">New Followers</div>
+                </div>
+                <div>
+                  <div class="metric-val">60 Days</div>
+                  <div class="metric-title">Campaign Runtime</div>
+                </div>
+              </div>
+              <div class="case-founder-quote">
+                <div class="founder-img" style="background:#d97706;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">EL</div>
+                <div class="founder-info">
+                  <h4>Emma Lawrence</h4>
+                  <p>Brand Lead @ Apex Apparel</p>
+                </div>
+              </div>
+            </div>
+            <div class="case-visual">
+              <div style="width:100%;height:100%;background:linear-gradient(135deg, #d97706 0%, #b45309 100%);display:flex;align-items:center;justify-content:center;color:#fff;padding:2rem;">
+                <div style="text-align:center;">
+                  <span style="font-size:3rem;">📈</span>
+                  <h4 style="font-size:1.8rem;margin-top:0.5rem;font-weight:800;">Apex Marketing Engine</h4>
+                  <p style="opacity:0.85;font-size:0.9rem;">Paid Ads & Social Media Management</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4-Step Agency Delivery Process -->
+    <section id="process" class="section-process">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">How We Work</span>
+          <h2 class="section-title">From Concept to <span class="serif-italic">Market Dominance</span></h2>
+          <p class="section-desc">Our battle-tested 4-phase agile delivery framework ensuring transparent communication and rapid launches.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-step">PHASE 01</div>
+            <h3 class="process-title">Discover & Audit</h3>
+            <p class="process-desc">Deep-dive discovery session, security perimeter scan, UX mapping, and marketing positioning analysis.</p>
+            <div class="process-deliverables">
+              <span class="deliverable-tag">Discovery Blueprint</span>
+              <span class="deliverable-tag">Vulnerability Report</span>
+              <span class="deliverable-tag">Competitor Matrix</span>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step">PHASE 02</div>
+            <h3 class="process-title">Design & Architecture</h3>
+            <p class="process-desc">Crafting pixel-perfect Figma screens, network topology diagrams, and marketing funnel wireframes.</p>
+            <div class="process-deliverables">
+              <span class="deliverable-tag">UI/UX Prototypes</span>
+              <span class="deliverable-tag">Network Architecture</span>
+              <span class="deliverable-tag">Ad Creatives & Copy</span>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step">PHASE 03</div>
+            <h3 class="process-title">Build & Secure</h3>
+            <p class="process-desc">Full-stack web engineering, penetration testing, firewall rules, and CMS integration.</p>
+            <div class="process-deliverables">
+              <span class="deliverable-tag">Production Codebase</span>
+              <span class="deliverable-tag">Hardened Security</span>
+              <span class="deliverable-tag">Speed Optimization</span>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step">PHASE 04</div>
+            <h3 class="process-title">Launch & Scale</h3>
+            <p class="process-desc">Live deployment, social media growth blitz, continuous SEO monitoring, and system uptime maintenance.</p>
+            <div class="process-deliverables">
+              <span class="deliverable-tag">Live Launch</span>
+              <span class="deliverable-tag">Ad Campaign Blitz</span>
+              <span class="deliverable-tag">24/7 Monitoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonials Wall (Designmonks signature style) -->
+    <section id="reviews" class="section-reviews">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-title">Trusted by Founders, <span class="serif-italic">Chosen by Brands</span></h2>
+          <p class="section-desc">See what our clients say about partnering with our multidisciplinary team.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-item">
+            <div>
+              <div class="stars-row">★★★★★</div>
+              <p class="review-text">"Having one team handle our UI/UX, Web Dev, and Cyber Security audit was a game-changer. Seamless communication and top-tier execution."</p>
+            </div>
+            <div class="reviewer-meta">
+              <div class="reviewer-img" style="background:#4338ca;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">KA</div>
+              <div>
+                <h4 class="reviewer-name">Kunle Adetayo</h4>
+                <p class="reviewer-org">CEO @ PlentyPay</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-item">
+            <div>
+              <div class="stars-row">★★★★★</div>
+              <p class="review-text">"Their graphics design team gave our brand an instant visual upgrade, and their social media management doubled our engagement in 30 days."</p>
+            </div>
+            <div class="reviewer-meta">
+              <div class="reviewer-img" style="background:#7c3aed;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">SH</div>
+              <div>
+                <h4 class="reviewer-name">Shakhawat Hossain</h4>
+                <p class="reviewer-org">Founder @ Carnesia</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-item">
+            <div>
+              <div class="stars-row">★★★★★</div>
+              <p class="review-text">"They identified and patched critical security flaws in our network that our previous agency completely missed. Outstanding technical depth."</p>
+            </div>
+            <div class="reviewer-meta">
+              <div class="reviewer-img" style="background:#059669;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">RT</div>
+              <div>
+                <h4 class="reviewer-name">Rifah Tasfia</h4>
+                <p class="reviewer-org">Security Lead @ Carbobon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founding Team & Leadership (Designmonks "Diverse Skill Set") -->
+    <section id="team" class="section-team">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Diverse Skill Set</span>
+          <h2 class="section-title">Meet the <span class="serif-italic">Founding Team</span></h2>
+          <p class="section-desc">The creative designers, growth marketers, and engineers architecting your brand's digital dominance.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Mohammed Ahanaf Akif Rahman -->
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="employee/mohammed-ahanaf-akif-rahman.jpg" alt="Mohammed Ahanaf Akif Rahman">
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Mohammed Ahanaf Akif Rahman</h3>
+              <span class="team-role">Product Designer & Co-Founder</span>
+              <div class="team-skills">
+                <span class="team-skill-tag">UI/UX Design</span>
+                <span class="team-skill-tag">Product Strategy</span>
+                <span class="team-skill-tag">Design Systems</span>
+                <span class="team-skill-tag">Interactive Prototypes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sabbir Ahmed -->
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="employee/sabbir-ahmed.png" alt="Sabbir Ahmed">
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Sabbir Ahmed</h3>
+              <span class="team-role">Digital Marketer & Co-Founder</span>
+              <div class="team-skills">
+                <span class="team-skill-tag">Performance Marketing</span>
+                <span class="team-skill-tag">Social Media Growth</span>
+                <span class="team-skill-tag">Paid Ads & SEO</span>
+                <span class="team-skill-tag">Conversion Funnels</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion (Designmonks signature style) -->
+    <section id="faq" class="section-faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Frequently Asked</span>
+          <h2 class="section-title">Your Questions, <span class="serif-italic">Answered!</span></h2>
+          <p class="section-desc">Everything you need to know about our services, pricing, and how we collaborate.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item active">
+            <button class="faq-trigger">
+              <span>How do you determine the final price for a project?</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-body">
+              <p>We provide estimated starting ranges online, but final pricing is customized based on your exact deliverables and timeline. During our quick 15-minute call, we discuss your goals and provide a clear, transparent proposal with no hidden fees.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Can we hire you for just one service, like Cyber Security or UI/UX?</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-body">
+              <p>Absolutely! You can engage our agency for a standalone service (such as a Security Penetration Test, UI/UX Redesign, or Social Media Campaign) or bundle multiple services together for a discounted phase-1 package.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>How quickly can our project start after the discovery call?</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-body">
+              <p>We typically kick off projects within 24 to 48 hours of scope approval. We immediately invite your team to a private Slack or WhatsApp channel and shared Notion workspace for real-time progress updates.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>What qualifications does your Cyber Security & Networking team have?</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-body">
+              <p>Our security engineers specialize in industry-recognized penetration testing methodologies, OWASP Top 10 web vulnerabilities, network firewall hardening, and strict non-disclosure compliance.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Do you offer revisions and ongoing post-launch support?</span>
+              <div class="faq-icon">+</div>
+            </button>
+            <div class="faq-body">
+              <p>Yes. In the design phase, we offer unlimited iterations until you love the outcome. Following launch, we provide ongoing monitoring, maintenance warranty, and continuous digital marketing support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- High-Converting Consultation & Booking Card -->
+    <section id="contact" class="section-booking">
+      <div class="container">
+        <div class="booking-card">
+          <!-- Left Info Box -->
+          <div class="booking-info">
+            <div>
+              <span class="booking-tag">Zero-Obligation Consultation</span>
+              <h2 class="booking-title">Ready to Elevate Your Brand? <span class="serif-italic">Let's Talk!</span></h2>
+              
+              <div class="booking-benefits">
+                <div class="benefit-item">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>15-min discovery call to discuss scope & budget</span>
+                </div>
+                <div class="benefit-item">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>Fast proposal & custom pricing within 24 hours</span>
+                </div>
+                <div class="benefit-item">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  <span>100% Confidentiality & Mutual NDA protection</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Founder Contact Card -->
+            <div class="founder-contact-box">
+              <img src="employee/mohammed-ahanaf-akif-rahman.jpg" alt="Mohammed Ahanaf Akif Rahman" class="founder-avatar-img">
+              <div class="founder-contact-info">
+                <h4>Mohammed Ahanaf Akif Rahman</h4>
+                <p>Product Designer & Founding Partner</p>
+                <a href="https://wa.me/17165036335" target="_blank" class="whatsapp-link">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  <span>Chat directly with us on WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Booking Form -->
+          <form id="agency-booking-form" class="booking-form">
+            <div class="form-group">
+              <label class="form-label" for="client-name">Your Full Name</label>
+              <input class="form-input" type="text" id="client-name" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="client-email">Work Email</label>
+              <input class="form-input" type="email" id="client-email" placeholder="alex@company.com" required>
+            </div>
+
+            <!-- Service Selection Checkboxes (The 7 Services!) -->
+            <div class="form-group">
+              <label class="form-label">Services You Need (Select all that apply)</label>
+              <div class="service-checkboxes">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="services" value="UI/UX Design" checked>
+                  <span>UI/UX Design</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="services" value="Web Development" checked>
+                  <span>Web Development</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="services" value="Digital Marketing">
+                  <span>Digital Marketing</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="services" value="Cyber Security">
+                  <span>Cyber Security</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="services" value="Networking">
+                  <span>Networking</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="services" value="Social Media">
+                  <span>Social Media Mgmt</span>
+                </label>
+                <label class="checkbox-label" style="grid-column: 1 / -1;">
+                  <input type="checkbox" name="services" value="Graphics Design">
+                  <span>Graphics Design & Branding</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Estimated Project Budget</label>
+              <input type="hidden" id="selected-budget" value="Discuss on Call">
+              <div class="budget-pills">
+                <button type="button" class="budget-pill" data-value="Under $1,000">&lt; $1,000</button>
+                <button type="button" class="budget-pill" data-value="$1,000 - $3,000">$1k – $3k</button>
+                <button type="button" class="budget-pill" data-value="$3,000 - $5,000">$3k – $5k</button>
+                <button type="button" class="budget-pill active" data-value="Discuss on Call">Discuss on Call 📞</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="client-project">Project Details</label>
+              <textarea class="form-input" id="client-project" rows="3" placeholder="Tell us about your project or what you want to achieve..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-form-submit">
+              <span>Send Inquiry & Schedule Call</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Hubs -->
+    <section class="section-offices">
+      <div class="container">
+        <div class="offices-grid">
+          <div class="office-card">
+            <h4 class="office-country">🇺🇸 United States</h4>
+            <p class="office-address">16 Cove Road, Mount Arlington, NJ</p>
+          </div>
+          <div class="office-card">
+            <h4 class="office-country">🇬🇧 United Kingdom</h4>
+            <p class="office-address">71-75 Shelton Street, Covent Garden, London</p>
+          </div>
+          <div class="office-card">
+            <h4 class="office-country">🇦🇪 Dubai</h4>
+            <p class="office-address">Al Fattan Downtown, 32d St, Al Satwa</p>
+          </div>
+          <div class="office-card">
+            <h4 class="office-country">🇧🇩 Bangladesh</h4>
+            <p class="office-address">Banani, Dhaka 1213</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with Giant Brand Watermark -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="logo-text">VORTEX<span>.</span></div>
+          </div>
+          <p>A full-stack digital, cyber security, networking, and creative agency delivering high-yield growth for ambitious founders.</p>
+          
+          <div class="footer-badges">
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <span>Clutch 5.0 Rated</span>
+            </div>
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <span>100% Verified Quality</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>7 Core Services</h4>
+          <div class="footer-links">
+            <a href="#services">UI/UX Design</a>
+            <a href="#services">Web Development</a>
+            <a href="#services">Digital Marketing</a>
+            <a href="#services">Cyber Security</a>
+            <a href="#services">Networking</a>
+            <a href="#services">Social Media Management</a>
+            <a href="#services">Graphics Design</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Pricing & Scope</h4>
+          <div class="footer-links">
+            <a href="#pricing">Starter Sprint</a>
+            <a href="#pricing">Full Digital Build</a>
+            <a href="#pricing">Enterprise & Security</a>
+            <a href="#contact">Schedule 15-Min Call</a>
+            <a href="#faq">Pricing FAQ</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="#case-studies">Selected Work</a>
+            <a href="#process">Our Delivery Flow</a>
+            <a href="#reviews">Client Testimonials</a>
+            <a href="#faq">Frequently Asked</a>
+            <a href="#contact">Direct Inquiry</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 VORTEX AGENCY. All rights reserved.</p>
+        <p>Built with cinematic precision, bulletproof security & high conversion.</p>
+      </div>
+
+      <!-- Giant Brand Watermark with Ambient Underglow -->
+      <div class="footer-watermark-wrap">
+        <div class="footer-watermark">VORTEX</div>
+        <div class="watermark-glow"></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
